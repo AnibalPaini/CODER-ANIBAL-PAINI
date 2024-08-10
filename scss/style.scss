@@ -1,0 +1,18 @@
+/*Setters*/
+@import "./reset/reset";
+@import "./reset/typography";
+
+/*Layouts*/
+@import "./layout/header";
+@import "./layout/footer";
+
+/*Pages*/
+@import"./pages/inicio";
+@import"./pages/nosotros";
+@import"./pages/preguntas";
+@import"./pages/productos";
+@import"./pages/contacto";
+
+
+/*Query*/
+@import"./query/query";

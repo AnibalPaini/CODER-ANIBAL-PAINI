@@ -1,0 +1,158 @@
+
+
+
+/*PRODUCTOS*/
+.buscar{
+    margin: 10px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buscar input{
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;;
+}
+.img__buscar{
+    cursor: pointer;
+    font-size: 23px;
+    margin-left: 5px;
+}
+/*FIN PRODUCTOS*/
+
+
+/*CONTACTO*/
+.grid__form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto 5rem auto;
+    gap: 2rem;
+}
+.input__correo{
+    grid-column:span 2;
+}
+/*
+.entrada input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.input__mensaje{
+    grid-column: span 2;
+}
+.input__mensaje textarea{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 12px;
+}
+.input__boton{
+    grid-column: span 2;
+}
+.input__boton input{
+    background-color: #6a5acd;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.input__boton input:hover {
+    background-color: #5a4cad;
+}*/
+/*FIN CONTACTO*/
+
+
+
+
+
+/* RESPONSIVE*/
+@media (max-width: 800px) {
+    nav{
+        display: none;
+    }
+
+    .header__menu{
+        display: block;
+    }
+
+    .section__inicio .imagen__inicio img {
+        max-width: 100%;
+    }
+
+    .section__destacados .productos { /*Responsive productos*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    footer .iconos {
+        display: flex;
+    }
+
+    /*NOSOTROS*/
+    .inicio__nosotros__parrafo--2,.inicio__nosotros__parrafo--3 {
+        display: none;
+    }
+    .section__quehacemos{
+        padding: 2rem;
+    }/*FIN NOSOTROS*/
+    
+}
+
+
+
+@media (max-width: 1050px) {
+    .section__inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .imagen__inicio {
+        order: 2;
+    }
+
+    .section__inicio > div:first-child {
+        order: 1;
+    }
+
+    .section__inicio p{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .inicio__parrafo--2{
+        display: none;
+
+    }
+
+    .productos {/*Responsive productos*/
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        margin: 0 auto;
+        gap: 2rem;
+        justify-content: center;
+        max-width: 800px;
+    }
+    .inicio__nosotros__parrafo--2,.inicio__nosotros__parrafo--3 {
+        display: none;/*NOSOTROS*/
+    }
+    .section__preguntas {
+        padding: 2rem 2.2rem;
+    }        
+}
+/* FIN RESPONSIVE*/
