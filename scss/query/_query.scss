@@ -1,16 +1,46 @@
-@media (max-width: 700px) {
-    .section__destacados{
-        .productos{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+@media (max-width: 1050px) {
+    .section__inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .imagen__inicio {
+            order: 2;
+        }
+        > div:first-child {
+            order: 1;
+        }
+        p{
+            text-align: center;
             margin: 0 auto;
             width: 100%;
         }
+        .inicio__parrafo--2{
+            display: none;
+        }
     }
+
+    /*Responsive productos*/
+    .section__destacados{
+        .productos {
+            grid-template-columns: repeat(2,1fr);
+            width: 100%;
+            margin: 0 auto;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 800px;
+        }
+    }
+
+    .inicio__nosotros__parrafo--2,.inicio__nosotros__parrafo--3 {
+        display: none;/*NOSOTROS*/
+    }
+    .section__preguntas {
+        padding: 2rem 2.2rem;
+    }        
 }
+
 @media (max-width: 900px) {
-    /*header*/
     header{
         .header__menu{
             display: block;
@@ -84,45 +114,17 @@
     
 }
 
-
-@media (max-width: 1050px) {
-    .section__inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        .imagen__inicio {
-            order: 2;
-        }
-        > div:first-child {
-            order: 1;
-        }
-        p{
-            text-align: center;
-            margin: 0 auto;
-            width: 100%;
-        }
-        .inicio__parrafo--2{
-            display: none;
-        }
-    }
-
-    /*Responsive productos*/
+@media (max-width: 700px) {
     .section__destacados{
-        .productos {
-            grid-template-columns: repeat(2,1fr);
-            width: 100%;
+        .productos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: 0 auto;
-            gap: 2rem;
-            justify-content: center;
-            max-width: 800px;
+            width: 100%;
         }
     }
-
-    .inicio__nosotros__parrafo--2,.inicio__nosotros__parrafo--3 {
-        display: none;/*NOSOTROS*/
-    }
-    .section__preguntas {
-        padding: 2rem 2.2rem;
-    }        
 }
+
+
+
