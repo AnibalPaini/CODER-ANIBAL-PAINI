@@ -88,11 +88,11 @@ footer {
   margin-top: 30px;
 }
 footer p {
-  color: #FFFFFF;
+  color: #000000;
 }
 footer .iconos a {
   font-size: 1.7rem;
-  color: #FFFFFF;
+  color: #000000;
   text-decoration: none;
   padding: 5px;
   width: 40px;
@@ -102,8 +102,8 @@ footer .iconos a {
   line-height: 30px;
 }
 footer .iconos a:hover {
-  color: black;
-  background-color: #FFFFFF;
+  color: #ffffff;
+  background-color: #000000;
   border-radius: 50%;
 }
 
@@ -245,6 +245,19 @@ footer .iconos a:hover {
   cursor: pointer;
   font-size: 23px;
   margin-left: 5px;
+}
+
+.button__productos {
+  width: 150px;
+  padding: 0.5rem;
+  background-color: #33007a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button__productos:hover {
+  background-color: #40009b;
 }
 
 .grid__form {

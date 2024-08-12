@@ -15,4 +15,15 @@
         margin-left: 5px;
     }
 }
+.button__productos{
+    width: 150px;
+    padding: 0.5rem;
+    background-color: #33007a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button__productos:hover{
+    background-color: #40009b; 
+}
 
