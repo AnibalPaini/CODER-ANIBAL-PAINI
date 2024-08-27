@@ -380,5 +380,10 @@ footer .iconos a:hover {
     width: 100%;
   }
 }
+@media (max-width: 350px) {
+  header, footer {
+    padding: 1rem 2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
